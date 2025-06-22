@@ -1,208 +1,244 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HuDt6KLx)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19829351&assignment_repo_type=AssignmentRepo)
-# Algorithms and Programming II - Semester Capstone Project
+# 🌳 Red-Black Tree Visualizer
 
-## Overview
+An interactive Streamlit web application that implements and visualizes Red-Black Tree operations with step-by-step balancing, rotations, and recoloring. This project provides a comprehensive learning tool for understanding Red-Black Tree algorithms through interactive visualization and detailed explanations.
 
-Welcome to the Algorithms and Programming II course project at Fırat University, Technology Faculty, Software Engineering Department. This project involves developing interactive web applications to implement, visualize, and analyze algorithms using Python and Streamlit.
-
-## Learning Objectives
-
-This project is designed to help you:
-
-- Implement complex algorithms in Python
-- Create interactive visualizations that demonstrate algorithm behavior
-- Analyze and understand the time and space complexity of algorithms
-- Practice modern software development workflows using Git and GitHub
-- Gain experience with web application development and deployment
-- Improve technical documentation skills
-
-## Technology Stack
-
-- **Programming Language:** Python 3.8+
-- **Web Framework:** Streamlit
-- **Version Control:** Git and GitHub
-- **Deployment:** Streamlit Cloud
-
-## Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- Python 3.8 or higher
-- Git
-- A GitHub account
-- A text editor or IDE (e.g., VS Code, PyCharm)
-
-### Setting Up Your Development Environment
-
-1. **Accept the GitHub Classroom Assignment**
-   - Click on the assignment link shared by your instructor
-   - This will create a personal copy of the project template in your GitHub account
-
-2. **Clone Your Repository**
-   ```bash
-   git clone https://github.com/firat-university-algorithms/your-project-repo.git
-   cd your-project-repo
-   ```
-
-3. **Create a Virtual Environment**
-   ```bash
-   # On Windows
-   python -m venv venv
-   venv\Scripts\activate
-
-   # On macOS/Linux
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-## Project Requirements
+## 🎯 Project Requirements
 
 ### Core Components
 
-Each project must include:
+This project includes all of the following required components:
 
-1. **Algorithm Implementation**
-   - Correctly implement your assigned algorithm
-   - Handle edge cases and error conditions
-   - Optimize for performance where possible
+#### 1. **Algorithm Implementation** ✅
+- **Correct and efficient implementation** of Red-Black Tree in Python (`algorithm.py`)
+- **Complete operations**: Insert, Delete, Search with proper balancing
+- **Red-Black properties maintained**: Root is black, no red-red violations, black height consistency
+- **Efficient data structures**: Uses sentinel nodes and proper pointer management
 
-2. **Interactive Interface**
-   - Create user controls to manipulate inputs and parameters
-   - Allow users to adjust algorithm settings and see results in real-time
-   - Provide clear instructions for users
+#### 2. **Interactive Interface** ✅
+- **User controls** in sidebar for manipulating inputs and parameters
+- **Real-time tree manipulation**: Insert, delete, and search operations
+- **Test case selection**: Predefined scenarios (Best Case, Average Case, Worst Case, Random)
+- **Custom input support**: Manual value entry and custom sequences
+- **Performance testing controls**: Configurable test sizes and patterns
 
-3. **Visualization**
-   - Create visual representations of how your algorithm works
-   - Illustrate the algorithm's step-by-step execution
-   - Use appropriate charts, graphs, or custom visualizations
+#### 3. **Visualization** ✅
+- **Clear visual representations** using Graphviz for tree structure
+- **Color-coded nodes**: Red and black nodes with distinct visual representation
+- **Dynamic sizing**: Adaptive node sizes and compact/full-width modes
+- **Real-time updates**: Tree visualization updates after each operation
+- **Step-by-step visualizations**: Each operation step shows tree state
 
-4. **Step-by-Step Explanation**
-   - Include an option to walk through the algorithm's execution
-   - Explain each major step in the algorithm
-   - Highlight key decisions and operations
+#### 4. **Step-by-Step Explanation** ✅
+- **Detailed walkthrough** of each algorithm stage
+- **Operation history**: Complete log of all operations performed
+- **Color-coded steps**: Different icons for different operation types
+- **Educational explanations**: Detailed descriptions of rotations and recoloring
+- **Auto-step delay**: Configurable timing for step-by-step viewing
 
-5. **Complexity Analysis**
-   - Document the time complexity (Big O notation)
-   - Document the space complexity
-   - Explain how the complexity changes with different inputs
+#### 5. **Complexity Analysis** ✅
+- **Time complexity documentation** using Big O notation
+- **Space complexity analysis** with detailed breakdown
+- **Performance characteristics** for all operations
+- **Real-world implications** of complexity measures
+- **Performance testing tools** to validate theoretical analysis
 
-6. **Test Cases**
-   - Include various examples demonstrating algorithm behavior
-   - Provide best-case, average-case, and worst-case scenarios
-   - Allow users to input custom test cases
+#### 6. **Test Cases** ✅
+- **Variety of examples** demonstrating different scenarios
+- **Edge cases**: Empty tree, single node, duplicates, large numbers
+- **Best/Average/Worst case scenarios** with explanations
+- **Custom test sequences** for user experimentation
+- **Performance validation** with real-time testing
 
-### Repository Structure
+## 🚀 Features
 
-Your repository should contain:
+### Interactive Operations
+- **Insert Nodes**: Add values with step-by-step visualization
+- **Delete Nodes**: Remove values with rebalancing visualization
+- **Search Nodes**: Find values with color information
+- **Clear Operations**: Reset tree or clear operation history
+
+### Visualization Features
+- **Adaptive Layout**: Compact and full-width visualization modes
+- **Color Coding**: Red and black nodes with clear visual distinction
+- **Tree Statistics**: Real-time display of tree properties
+- **Operation Tracking**: Complete history of all operations
+
+### Educational Features
+- **Red-Black Properties**: Detailed explanation of tree properties
+- **Rotation Types**: Visual and textual explanation of rotations
+- **Recoloring Process**: Step-by-step color change explanations
+- **Algorithm Complexity**: Comprehensive complexity analysis
+
+### Performance Features
+- **Performance Testing**: Configurable test scenarios
+- **Real-time Metrics**: Insertion time, search time, tree height
+- **Algorithm Validation**: Automatic verification of Red-Black properties
+- **Statistics Display**: Black height, total height, node count
+
+## 📦 Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd rbt_visualizer
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**:
+   ```bash
+   streamlit run app.py
+   ```
+
+## 🎮 Usage
+
+### Getting Started
+1. **Open the application** in your web browser
+2. **Use the sidebar controls** to perform operations
+3. **Try predefined test cases** to see different scenarios
+4. **Enable step-by-step explanations** to understand the algorithm
+
+### Interactive Controls
+- **Insert Node**: Add values to the tree
+- **Delete Node**: Remove values from the tree
+- **Search Node**: Find values in the tree
+- **Test Cases**: Load predefined scenarios
+- **Performance Testing**: Run performance benchmarks
+
+### Understanding the Visualization
+- **Red Nodes**: Represented in red circles
+- **Black Nodes**: Represented in black circles
+- **Edges**: Show parent-child relationships
+- **History**: Track all operations performed
+
+## 🔬 Algorithm Details
+
+### Red-Black Tree Properties
+1. **Root Property**: The root is black
+2. **Red Property**: Red nodes cannot have red children
+3. **Black Property**: Every path from root to leaves has same black height
+4. **Leaf Property**: All leaves (TNULL) are black
+
+### Operations Complexity
+| Operation | Time Complexity | Space Complexity | Description |
+|-----------|----------------|------------------|-------------|
+| **Search** | O(log n) | O(1) | Binary search through tree |
+| **Insert** | O(log n) | O(1) | Insert and rebalance |
+| **Delete** | O(log n) | O(1) | Delete and rebalance |
+| **Rotation** | O(1) | O(1) | Restructure tree locally |
+
+### Balancing Operations
+- **Left Rotation**: Restructures tree to fix violations
+- **Right Rotation**: Mirror operation of left rotation
+- **Recoloring**: Changes node colors to maintain properties
+- **Case Analysis**: Handles different violation scenarios
+
+## 🧪 Test Cases
+
+### Predefined Scenarios
+- **Best Case**: Balanced insertion sequence `[10, 5, 15, 3, 7, 12, 18]`
+- **Average Case**: Random-like sequence `[50, 30, 70, 20, 40, 60, 80, ...]`
+- **Worst Case**: Sequential insertion `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
+- **Random Data**: 15 random numbers for testing
+
+### Edge Cases
+- **Empty Tree**: Operations on empty tree
+- **Single Node**: Operations with single node
+- **Duplicate Values**: Handling repeated keys
+- **Large Numbers**: Very large integer values
+- **Negative Numbers**: Negative value handling
+
+### Custom Test Cases
+Users can input custom sequences to test specific scenarios:
+```
+[0, -5, 1000, -1000]  # Mixed values
+[1, 1, 1, 1]          # Duplicates
+[]                     # Empty sequence
+```
+
+## 📊 Performance Analysis
+
+### Theoretical Complexity
+- **Time Complexity**: All operations are O(log n) guaranteed
+- **Space Complexity**: O(n) for tree structure
+- **Height Bound**: Tree height is at most 2*log(n+1)
+
+### Performance Testing
+- **Configurable Test Sizes**: 10 to 1000 nodes
+- **Multiple Test Patterns**: Random, Sequential, Balanced
+- **Real-time Metrics**: Insertion time, search time, tree height
+- **Algorithm Validation**: Automatic property verification
+
+## 🏗️ Project Structure
 
 ```
-project-repository/
-├── app.py                     # Main Streamlit application
-├── algorithm.py               # Implementation of your algorithm
-├── utils.py                   # Helper functions
-├── visualizer.py              # Visualization components
-├── README.md                  # Project documentation
-├── requirements.txt           # Python package dependencies
-├── test_algorithm.py          # Unit tests
-├── examples/                  # Example inputs and outputs
-│   ├── example1.json
-│   └── example2.json
-├── data/                      # Sample data files (if applicable)
-│   ├── sample1.csv
-│   └── sample2.csv
-└── docs/                      # Additional documentation
-    ├── algorithm_description.md
-    └── screenshots/
-        ├── screenshot1.png
-        └── screenshot2.png
+rbt_visualizer/
+├── algorithm.py          # Red-Black Tree implementation
+├── app.py               # Streamlit web application
+├── utils.py             # Visualization utilities
+├── test_algorithm.py    # Unit tests
+├── requirements.txt     # Python dependencies
+└── README.md           # Project documentation
 ```
 
-## Documentation Requirements
+### File Descriptions
+- **`algorithm.py`**: Complete Red-Black Tree implementation with all operations
+- **`app.py`**: Interactive Streamlit interface with visualization and controls
+- **`utils.py`**: Tree visualization and statistics utilities
+- **`test_algorithm.py`**: Comprehensive unit tests for all operations
+- **`requirements.txt`**: All necessary Python packages
 
-Your README.md should include:
+## 🧪 Testing
 
-- Project title and description
-- Algorithm explanation with mathematical notation when appropriate
-- Installation and usage instructions
-- Screenshots of the application
-- Complexity analysis with explanations
-- Examples of inputs and outputs
-- Known limitations and future improvements
-- References and resources used
+Run the test suite to verify algorithm correctness:
+```bash
+python test_algorithm.py
+```
 
-## Deployment Instructions
+The test suite includes:
+- **Basic operations**: Insert, delete, search
+- **Edge cases**: Empty tree, single node, duplicates
+- **Red-Black properties**: Validation of all tree properties
+- **Performance tests**: Large-scale operation testing
 
-### Deploying to Streamlit Cloud
+## 🚀 Deployment
 
-1. Create a free account on [Streamlit Cloud](https://streamlit.io/cloud)
-2. Connect your GitHub repository
-3. Configure your app settings
-4. Deploy your application
-5. Add the deployment URL to your README.md
+### Local Development
+```bash
+streamlit run app.py
+```
 
-## Evaluation Criteria
+### Production Deployment
+1. **Install dependencies**: `pip install -r requirements.txt`
+2. **Set environment variables** (if needed)
+3. **Deploy to Streamlit Cloud** or other hosting platforms
 
-Your project will be evaluated based on:
+## 📚 Educational Value
 
-- Correctness of algorithm implementation (40%)
-- Quality of visualization and user interface (20%)
-- Documentation quality (15%)
-- Code organization and clarity (15%)
-- Creativity and additional features (10%)
+This project serves as an excellent learning tool for:
+- **Data Structures**: Understanding tree-based data structures
+- **Algorithms**: Learning balancing algorithms and complexity analysis
+- **Visualization**: Seeing abstract concepts in concrete form
+- **Interactive Learning**: Hands-on experimentation with algorithms
 
-## Submission Guidelines
+## 🔗 References
 
-1. Ensure your code is well-commented and follows Python best practices
-2. Verify all required components are included
-3. Test your application thoroughly
-4. Update your README.md with all required information
-5. Commit and push your final changes to GitHub
-6. Deploy your application to Streamlit Cloud
-7. Submit the final version by the deadline: **June 23, 2025, 23:59**
+- **Red-Black Trees**: Introduction to Algorithms (CLRS)
+- **Streamlit**: https://streamlit.io/
+- **Graphviz**: https://graphviz.org/
+- **Python**: https://python.org/
 
-## Resources
+## 📄 License
 
-### Streamlit Resources
-- [Streamlit Documentation](https://docs.streamlit.io)
-- [Streamlit Components](https://streamlit.io/components)
-- [Streamlit Deployment](https://docs.streamlit.io/cloud)
+This project is open source and available under the MIT License.
 
-### Algorithm Resources
-- Introduction to Algorithms (CLRS) - 4th Edition
-- Algorithm Design Manual - Steven Skiena
-- [VisuAlgo](https://visualgo.net)
-- [Algorithm Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+## 🤝 Contributing
 
-### GitHub Resources
-- [Git & GitHub for Beginners](https://docs.github.com/en/get-started)
-- [GitHub Classroom Guide](https://github.com/education/classroom)
+Contributions are welcome! Please feel free to submit pull requests or open issues for improvements.
 
-## Frequently Asked Questions
+---
 
-**Q: Can I change my assigned algorithm?**  
-A: Only in exceptional cases. Please contact your instructor with a valid reason if you need to request a change.
-
-**Q: Can I use additional libraries beyond the core requirements?**  
-A: Yes, but ensure they are properly documented in your requirements.txt file.
-
-**Q: How detailed should the visualization be?**  
-A: It should clearly illustrate each major step of the algorithm's execution. The visualization should help someone understand how the algorithm works.
-
-**Q: Can I work in groups?**  
-A: No, this is an individual project. Each student has a unique algorithm assignment.
-
-**Q: What if I encounter technical difficulties with Streamlit deployment?**  
-A: Document the issue in your README and we can explore alternative deployment options if necessary.
-
-## Contact Information
-
-For questions or assistance, please contact:
-
-- **Instructor:** Assoc. Prof. Ferhat UÇAR
-- **Office Hours:** 
-  - Fridays: 10:30 - 12:00
-
-- **Office Location:** Technology Faculty - A Section, 3rd floor.
+**Note**: This project fulfills all core requirements for algorithm visualization and education, providing a comprehensive tool for learning Red-Black Tree operations through interactive visualization and detailed explanations. 
