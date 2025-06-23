@@ -248,10 +248,11 @@ This project serves as an excellent learning tool for:
 - **Graphviz**: https://graphviz.org/
 - **Python**: https://python.org/
 
-Author
-Name: İbrahim Halil Siyli
-Student ID: 240543022
-GitHub: https://github.com/ibrahimhalilsiyli
+## Author
+
+- **Name:** İbrahim Halil Siyli
+- **Student ID:** 240543022
+- **GitHub:** https://github.com/ibrahimhalilsiyli
 ## 📄 License
 
 This project is open source and available under the MIT License.
