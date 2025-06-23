@@ -229,11 +229,11 @@ This project serves as an excellent learning tool for:
 
 
 # In-App Screenshots
-## Main Menu
+## Main Menu interface
 ![image](https://github.com/user-attachments/assets/6746f153-40e8-4a41-96d4-5b917399e47a)
 
 
-## Visualization
+## Visualization part
 ![image](https://github.com/user-attachments/assets/bab85fa1-41cc-4736-967b-04716eb1b5d1)
 
 
@@ -248,6 +248,10 @@ This project serves as an excellent learning tool for:
 - **Graphviz**: https://graphviz.org/
 - **Python**: https://python.org/
 
+Author
+Name: İbrahim Halil Siyli
+Student ID: 240543022
+GitHub: https://github.com/ibrahimhalilsiyli
 ## 📄 License
 
 This project is open source and available under the MIT License.
